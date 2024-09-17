@@ -1,0 +1,57 @@
+// WINDOW Object
+/*The window object represnts an open window in a browser, it is browser's object(not js) and is automatically created by browser
+-> it is a global object with lots of propeerties and methods */
+
+// DOM ->Document Object Model
+// console.log-->elements ko as an object print karta hai 
+// console.dir-->document ke properties and methods ko print karwane mein help kartaa hai 
+
+// let h2 = document.querySelector("h2");
+// console.dir(h2.innerText);
+// h2.innerText = h2.innerText + " from apna college student";
+
+// Selecting the elements through index [BY AAAM JINDAGI]
+// let box1 = document.querySelectorAll(".box");
+// box1[0].innerText = "Kuch change hua?"
+// box1[1].innerText = "haan yaar!"
+// box1[2].innerText = "ye toh hone lagaaaa!!! waao"
+
+// Selecting the elements through index [BY MINTOS JINDAGI] {creating loops}
+// let box1 = document.querySelectorAll(".box");
+// let idx = 1;
+
+// for(div of box1){
+//     div.innerText = `Unique Value ${idx}`
+//     idx++;
+// }
+// let newButton = document.createElement("button");
+// newButton.innerText = "click me";
+// document.querySelector("body").prepend(newButton);
+// newButton.style.color=("white");
+// newButton.style.backgroundColor=("red");
+<!-- DOM Manipulation -->
+querySelector
+->tagName: returns tag for element nodes
+->innerText: returens the text content of the element and all its children 
+->innerHTML: returns the plain text or HTML contents in the element
+->textContent: returnds textual content even for hidder elements 
+
+<--Attributes-->
+getAttribute(attr)->to get the attribute value
+setAttribute(attr,value)->to set the attribute val th
+style.node
+
+<--Insert elements
+let el=document.creatElement("div)
+
+->node.append(el)->at the end(inside)
+->node.prepend(el)->at the starting(inside)
+->node.before(el)->before the node(outside)
+->node.after(el)-->after the node(outside)
+eg->
+let newHeading=document.createElement("h1");
+newHeading.innerHTML="<i>nikita"</i>;
+
+document.querySelector("body").prepend(newHeading);
+<--delete element
+->node.remove()-->
